@@ -26,8 +26,4 @@ connectDB();
 
 app.use('/api', router);
 
-app.get('/health', (req, res) => {
-  return res.status(200).json({ status: 'ok', timestamp: new Date() });
-});
-
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
